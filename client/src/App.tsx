@@ -7,6 +7,8 @@ import { ProtectedRoute } from "./lib/protected-route";
 
 // Pages
 import Affiliate from "@/pages/Affiliate";
+import affiliatedashboard from "@/pages/affiliatedashboard";
+import ShopperDashboard from "@/pages/ShopperDashboard"
 import Home from "@/pages/Home";
 import How from "@/pages/How";
 import About from "@/pages/About";
@@ -50,6 +52,9 @@ function Router() {
             <Route path="/contact" component={Contact} />
             <Route path="/tools" component={Tools} />
             <Route path="/pricing" component={Pricing} />
+            <Route path="/affiliatedashboard" component={affiliatedashboard} />
+            <Route path="/shopperdashboard" component={ShopperDashboard} />
+            {/* Protected routes */}
             <ProtectedRoute path="/dashboard" component={DashboardPage} />
             <Route component={NotFound} />
           </Switch>
