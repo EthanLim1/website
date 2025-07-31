@@ -31,8 +31,8 @@ const Pricing = () => {
                 Commission-Based Pricing
               </CardTitle>
               <CardDescription className="text-lg text-gray-600 mt-4">
-                No upfront costs, no monthly fees - just a small percentage when
-                you earn
+                Only a small deposit of $30. No monthly fees. When you earn, our fee
+                comes out of your deposit — never from your payout.
               </CardDescription>
             </CardHeader>
 
@@ -44,32 +44,39 @@ const Pricing = () => {
                     How It Works
                   </h3>
 
-                  <div className="bg-orange-50 p-6 rounded-lg border border-orange-200">
-                    <div className="text-center mb-4">
-                      <div className="text-4xl font-bold text-orange-600">
-                        20-30%
+                    <div className="bg-orange-50 p-6 rounded-lg border border-orange-200">
+                      <div className="text-center mb-4">
+                        <div className="text-4xl font-bold text-orange-600">
+                          20–30%
+                        </div>
+                        <div className="text-lg text-gray-700">
+                          Commission Rate (of your affiliate earnings)
+                        </div>
                       </div>
-                      <div className="text-lg text-gray-700">
-                        Commission Rate
-                      </div>
+                      <p className="text-gray-600 text-center">
+                        We deduct our fee from your deposit only after a
+                        successful sale. Your payout from the network stays the
+                        same.
+                      </p>
                     </div>
-                    <p className="text-gray-600 text-center">
-                      We take a small percentage only when you successfully earn
-                      from affiliate sales
-                    </p>
-                  </div>
 
                   <div className="space-y-3">
                     <div className="flex items-center gap-3">
                       <Check className="w-5 h-5 text-green-500 flex-shrink-0" />
                       <span className="text-gray-700">
-                        No setup fees or monthly subscriptions
+                        No monthly subscriptions
                       </span>
                     </div>
                     <div className="flex items-center gap-3">
                       <Check className="w-5 h-5 text-green-500 flex-shrink-0" />
                       <span className="text-gray-700">
-                        Commission applies only to successful sales
+                        Fees apply only to successful sales
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <Check className="w-5 h-5 text-green-500 flex-shrink-0" />
+                      <span className="text-gray-700">
+                        Fees are taken from your deposit, not your payout
                       </span>
                     </div>
                     <div className="flex items-center gap-3">
@@ -90,7 +97,7 @@ const Pricing = () => {
                 {/* Example Calculation */}
                 <div className="space-y-6">
                   <h3 className="text-2xl font-semibold text-gray-900">
-                    Example
+                    Example (Deposit-Funded Fee)
                   </h3>
 
                   <div className="bg-gray-50 p-6 rounded-lg">
@@ -107,20 +114,29 @@ const Pricing = () => {
                         <span className="text-gray-600">
                           Your Affiliate Commission (10%):
                         </span>
-                        <span className="font-semibold">$10</span>
+                        <span className="font-semibold">$10.00</span>
                       </div>
-                      <div className="border-t pt-3">
+
+                      <div className="border-t pt-3 space-y-2">
                         <div className="flex justify-between">
                           <span className="text-gray-600">
                             Our Fee (25% of your commission):
                           </span>
                           <span className="font-semibold text-orange-600">
-                            $2.50
+                            $2.50 (charged to deposit)
                           </span>
                         </div>
-                        <div className="flex justify-between text-lg font-bold">
-                          <span>Your Net Earnings:</span>
-                          <span className="text-green-600">$7.50</span>
+
+                        <div className="flex justify-between">
+                          <span className="text-gray-600">Your Payout:</span>
+                          <span className="font-bold text-green-600">$10.00</span>
+                        </div>
+
+                        <div className="flex justify-between text-sm">
+                          <span className="text-gray-600">Deposit Balance:</span>
+                          <span className="font-medium text-gray-900">
+                            $30.00 → $27.50
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -128,8 +144,10 @@ const Pricing = () => {
 
                   <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
                     <p className="text-blue-800 text-sm">
-                      <strong>Note:</strong> Commission rate may vary between
-                      20-30% based on volume and partnership level.
+                      <strong>Note:</strong> The 20–30% rate applies to your
+                      affiliate earnings and is deducted from your deposit after
+                      each successful sale. If your deposit runs low, we’ll
+                      prompt you to top up before the next fee.
                     </p>
                   </div>
                 </div>
@@ -175,8 +193,9 @@ const Pricing = () => {
                 When do you charge the commission?
               </h3>
               <p className="text-gray-600">
-                We only charge our commission when you receive payment from your
-                affiliate sales. No sale, no fee - it's that simple.
+                Only after you receive earnings from a successful affiliate
+                sale. We charge the fee to your deposit at that time. Your
+                payout stays intact.
               </p>
             </div>
 
@@ -185,9 +204,9 @@ const Pricing = () => {
                 How is the commission calculated?
               </h3>
               <p className="text-gray-600">
-                Our commission is calculated as a percentage of your affiliate
-                earnings, not the total product price. This ensures we're only
-                paid when you're paid.
+                As a percentage of your affiliate earnings (not the product
+                price). We deduct that amount from your deposit, not from your
+                payout.
               </p>
             </div>
 
@@ -196,9 +215,8 @@ const Pricing = () => {
                 Are there any hidden fees?
               </h3>
               <p className="text-gray-600">
-                Absolutely not. Our commission-based model is completely
-                transparent with no setup fees, monthly subscriptions, or hidden
-                charges.
+                No. There are no setup fees or monthly subscriptions. Your
+                deposit only covers commission fees on successful sales and can be refunded at any time.
               </p>
             </div>
           </div>

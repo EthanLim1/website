@@ -16,7 +16,7 @@ import Contact from "@/pages/Contact";
 import Tools from "@/pages/Tools";
 import Pricing from "@/pages/Pricing";
 import NotFound from "@/pages/not-found";
-// import AuthPage from "@/pages/auth-page";
+import AuthPage from "@/pages/auth-page";
 import DashboardPage from "@/pages/dashboard-page";
 
 // Layout components
@@ -48,6 +48,7 @@ function Router() {
             <Route path="/" component={Home} />
             <Route path="/affiliate" component={Affiliate} />
             <Route path="/how" component={How} />
+            <Route path="/auth" component={AuthPage} />
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
             <Route path="/tools" component={Tools} />
